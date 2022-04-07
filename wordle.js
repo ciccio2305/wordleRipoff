@@ -79,7 +79,7 @@ function isLetter(str) {
                   elementX.style.backgroundColor = "rgb(200,170,0)";
                 }
           }
-        
+               
              
               i=0;
               j+=1;
