@@ -74,7 +74,7 @@ function isLetter(str) {
                 elementX = document.getElementById(curr1);
                 if(stato[x]==1)
                     elementX.style.backgroundColor = "green";
-                if(stato[x]==0){
+                if(stato[x]==2){
                   elementX.style.backgroundColor = "rgb(200,170,0)";
                 }
           }
