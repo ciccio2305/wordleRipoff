@@ -60,8 +60,8 @@ function isLetter(str) {
                       stato[x]=1
               
                     if(stato[x]!=1){
-                      if(stato==0)
-                        stato=2
+                      if(stato[x]==0)
+                        stato[x]=2
                   
                   }
                 }
