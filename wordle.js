@@ -47,23 +47,39 @@ function logKey(e) {
                 element = document.getElementById("title");
                 element.textContent = "The word was: " + randWord +  " :(";
             }
-            for(let x=0; x<5; x++){
-                for(let y=0; y<5; y++){
-                    if(randWord[y] == string[x]){
-                        let curr1 = (j+1).toString() + (x+1).toString();
-                        //console.log(curr1);
-                        elementX = document.getElementById(curr1);
-                        if(x==y){
-                            elementX.style.backgroundColor = "green";
-                        }
-                        else{
-                            elementX.style.backgroundColor = "rgb(200,170,0)";
-                        }
-                        
-                    }
-                }
-            }
+            
+            let stato=[]
 
+            for(let x=0;x<6;x++)
+              stato[x]=0;
+
+            for(let x=0; x<5; x++){
+              for(let y=0; y<5; y++){
+                if(randWord[y] == string[x]){
+                  if(x==y)
+                    stato[x]=1
+            
+                  if(stato[x]!=1){
+                    if(stato==0)
+                      stato=2
+                
+                }
+              }
+             }
+            for(let x=0;x<5;x++){
+              let curr1 = (j+1).toString() + (x+1).toString();
+              //console.log(curr1);
+    
+              elementX = document.getElementById(curr1);
+              if(x==y){
+                  elementX.style.backgroundColor = "green";
+              }
+              else{
+                elementX.style.backgroundColor = "rgb(200,170,0)";
+              }
+        }
+             
+           
             i=0;
             j+=1;
             string = '';
