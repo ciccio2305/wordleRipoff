@@ -203,6 +203,3 @@ function isLetter(str) {
       }
       //console.log(i);
   }
-  
-
-
